@@ -11,6 +11,11 @@ Why another flatten utility? All the other libs I found had too much junk in the
 ```bash
 npm i arr-flatten --save
 ```
+#### Install with [bower](https://github.com/bower/bower)
+
+```bash
+bower install arr-flatten --save
+```
 
 ## Run tests
 
