@@ -11,7 +11,11 @@ var should = require('should');
 var flatten = require('./');
 
 describe('flatten', function () {
-  it('should flatten array:', function () {
-    flatten(['a', ['b', ['c']]], ['d', ['e']]).should.eql(['a', 'b', 'c', 'd', 'e']);
+  it('should flatten nested arrays:', function () {
+    flatten(['a', 'b', ['c'], 'd', ['e']]).should.eql(['a', 'b', 'c', 'd', 'e']);
+  });
+
+  it('should flatten deeply nested arrays:', function () {
+    flatten(['a', [[[[[[[['b', [['c']]]]]], 'd', ['e']]]]]]).should.eql(['a', 'b', 'c', 'd', 'e']);
   });
 });
