@@ -1,7 +1,7 @@
 {
   "name": "arr-flatten",
   "description": "Recursively flatten an array or arrays. This is the fastest implementation of array flatten.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/jonschlinkert/arr-flatten",
   "author": {
     "name": "Jon Schlinkert",

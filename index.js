@@ -7,11 +7,11 @@
 
 'use strict';
 
-module.exports = function (arr) {
-  return flatten(arr, []);
+module.exports = function flatten(arr) {
+  return flat(arr, []);
 };
 
-function flatten(arr, res) {
+function flat(arr, res) {
   var len = arr.length;
   var num = 0;
 
@@ -19,7 +19,7 @@ function flatten(arr, res) {
     var i = num++;
 
     if (Array.isArray(arr[i])) {
-      flatten(arr[i], res);
+      flat(arr[i], res);
     } else {
       res.push(arr[i]);
     }
