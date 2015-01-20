@@ -11,7 +11,7 @@ var chalk = require('chalk');
  * Run to ensure that all fns return the same, correct result.
  */
 
-var fixtures = glob.sync(__dirname + '/fixtures/*.*');
+var fixtures = glob.sync(__dirname + '/fixtures/l*.js');
 
 glob.sync(__dirname + '/code/*.js').forEach(function (fp) {
   var fn = require(path.resolve(__dirname, 'code', fp));

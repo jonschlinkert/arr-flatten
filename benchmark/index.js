@@ -2,8 +2,9 @@
 
 var Suite = require('benchmarked');
 var suite = new Suite({
+  result: false,
   fixtures: 'fixtures/*.js',
-  add: 'code/{lib-,arr-}*.js',
+  add: 'code/{lib*,current}.js',
   cwd: __dirname
 });
 
