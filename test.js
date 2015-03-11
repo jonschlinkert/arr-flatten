@@ -2,7 +2,7 @@
  * arr-flatten <https://github.com/jonschlinkert/arr-flatten>
  *
  * Copyright (c) 2014-2015, Jon Schlinkert.
- * Licensed under the MIT License
+ * Licensed under the MIT License.
  */
 
 'use strict';

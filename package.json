@@ -1,7 +1,7 @@
 {
   "name": "arr-flatten",
   "description": "Recursively flatten an array or arrays. This is the fastest implementation of array flatten.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/jonschlinkert/arr-flatten",
   "author": {
     "name": "Jon Schlinkert",
@@ -18,12 +18,15 @@
     "type": "MIT",
     "url": "https://github.com/jonschlinkert/arr-flatten/blob/master/LICENSE"
   },
+  "files": [
+    "index.js"
+  ],
   "main": "index.js",
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha -R spec",
+    "test": "mocha",
     "benchmarks": "node benchmark"
   },
   "devDependencies": {
