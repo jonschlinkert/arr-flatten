@@ -7,6 +7,8 @@
 
 'use strict';
 
+var toString = Object.prototype.toString;
+
 module.exports = function flatten(arr) {
   return flat(arr, []);
 };
@@ -17,7 +19,8 @@ function flat(arr, res) {
 
   while (len--) {
     var cur = arr[++i];
-    if (Array.isArray(cur)) {
+
+    if (toString.call(cur) === '[object Array]') {
       flat(cur, res);
     } else {
       res.push(cur);
