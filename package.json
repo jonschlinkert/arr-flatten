@@ -3,21 +3,12 @@
   "description": "Recursively flatten an array or arrays. This is the fastest implementation of array flatten.",
   "version": "1.0.1",
   "homepage": "https://github.com/jonschlinkert/arr-flatten",
-  "author": {
-    "name": "Jon Schlinkert",
-    "url": "https://github.com/jonschlinkert"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/jonschlinkert/arr-flatten.git"
-  },
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/arr-flatten",
   "bugs": {
     "url": "https://github.com/jonschlinkert/arr-flatten/issues"
   },
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/jonschlinkert/arr-flatten/blob/master/LICENSE"
-  },
+  "license": "MIT",
   "files": [
     "index.js"
   ],

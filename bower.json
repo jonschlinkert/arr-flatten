@@ -1,7 +1,58 @@
 {
   "name": "arr-flatten",
-  "version": "0.2.1",
+  "version": "1.0.1",
   "main": [
     "index.js"
+  ],
+  "description": "Recursively flatten an array or arrays.",
+  "homepage": "https://github.com/jonschlinkert/arr-flatten",
+  "repository": "jonschlinkert/arr-flatten",
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/arr-flatten/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "array-flatten": "^2.1.1",
+    "array-slice": "^1.0.0",
+    "benchmarked": "^1.0.0",
+    "chalk": "^1.1.3",
+    "compute-flatten": "^1.0.0",
+    "flatit": "^1.1.1",
+    "flatten": "^1.0.2",
+    "flatten-array": "^1.0.0",
+    "glob": "^7.1.1",
+    "gulp-format-md": "^0.1.12",
+    "just-flatten-it": "^1.1.23",
+    "lodash.flattendeep": "^4.4.0",
+    "m_flattened": "^1.0.1",
+    "utils-flatten": "^1.0.0",
+    "write": "^0.3.3"
+  },
+  "keywords": [
+    "arr",
+    "array",
+    "elements",
+    "flat",
+    "flatten",
+    "nested",
+    "recurse",
+    "recursive",
+    "recursively"
+  ],
+  "authors": [
+    "Jon Schlinkert (https://github.com/jonschlinkert)"
+  ],
+  "ignore": [
+    "actual",
+    "bower_components",
+    "fixtures",
+    "node_modules",
+    "temp",
+    "test",
+    "test.js",
+    "tmp"
   ]
 }
