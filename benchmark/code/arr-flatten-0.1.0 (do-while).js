@@ -1,9 +1,3 @@
-'use strict';
-
-/**
- * this was used in v0.1.0
- */
-
 module.exports = function () {
   var args = [].slice.call(arguments);
 

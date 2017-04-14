@@ -3,7 +3,7 @@
 var path = require('path');
 var util = require('util');
 var glob = require('glob');
-var chalk = require('chalk');
+var bold = require('ansi-bold');
 
 /**
  * Sanity check
@@ -18,7 +18,7 @@ glob.sync(__dirname + '/code/*.js').forEach(function (fp) {
   var name = path.basename(fp, path.extname(fp));
 
   fixtures.forEach(function (fixture) {
-    console.log(chalk.bold(name) + ':', inspect(fn(require(fixture))));
+    console.log(bold(name) + ':', inspect(fn(require(fixture))));
   });
 });
 

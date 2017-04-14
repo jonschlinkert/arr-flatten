@@ -1,9 +1,4 @@
-'use strict';
-
 module.exports = function (arr) {
-  if (!arr.some(Array.isArray)) {
-    return arr;
-  }
   return flatten(arr, []);
 };
 
@@ -20,6 +15,5 @@ function flatten(arr, res) {
       res.push(arr[i]);
     }
   }
-
   return res;
 }
