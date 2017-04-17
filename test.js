@@ -7,9 +7,9 @@
 
 'use strict';
 
+require('mocha');
 var assert = require('assert');
 var flatten = require('./');
-var arrFlatten = require('array-flatten');
 
 describe('flatten', function() {
   it('should flatten nested arrays:', function() {
