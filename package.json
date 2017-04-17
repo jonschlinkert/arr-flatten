@@ -1,7 +1,7 @@
 {
   "name": "arr-flatten",
   "description": "Recursively flatten an array or arrays.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "https://github.com/jonschlinkert/arr-flatten",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/arr-flatten",
@@ -31,7 +31,9 @@
     "glob": "^7.1.1",
     "gulp-format-md": "^0.1.12",
     "just-flatten-it": "^1.1.23",
+    "lodash.flattendeep": "^4.4.0",
     "m_flattened": "^1.0.1",
+    "mocha": "^3.2.0",
     "utils-flatten": "^1.0.0",
     "write": "^0.3.3"
   },
@@ -55,9 +57,16 @@
     "plugins": [
       "gulp-format-md"
     ],
+    "related": {
+      "list": [
+        "arr-filter",
+        "arr-union",
+        "array-each",
+        "array-unique"
+      ]
+    },
     "lint": {
       "reflinks": true
     }
-  },
-  "dependencies": {}
+  }
 }
