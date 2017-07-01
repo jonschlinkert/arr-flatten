@@ -7,21 +7,16 @@
 
 'use strict';
 
-module.exports = function flatten(arr) {
+module.exports = function (arr) {
   return flat(arr, []);
 };
 
-function flat(arr, acc) {
+function flat(arr, res) {
+  var i = 0, cur;
   var len = arr.length;
-  var idx = -1;
-
-  while (++idx < len) {
-    var cur = arr[idx];
-    if (Array.isArray(cur)) {
-      flat(cur, acc);
-    } else {
-      acc.push(cur);
-    }
+  for (; i < len; i++) {
+    cur = arr[i];
+    Array.isArray(cur) ? flat(cur, res) : res.push(cur);
   }
-  return acc;
+  return res;
 }
