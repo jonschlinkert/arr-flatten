@@ -4,6 +4,10 @@
   "version": "1.0.3",
   "homepage": "https://github.com/jonschlinkert/arr-flatten",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "contributors": [
+    "Jon Schlinkert (http://twitter.com/jonschlinkert)",
+    "Luke Edwards (https://lukeed.com)"
+  ],
   "repository": "jonschlinkert/arr-flatten",
   "bugs": {
     "url": "https://github.com/jonschlinkert/arr-flatten/issues"
