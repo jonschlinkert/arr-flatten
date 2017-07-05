@@ -1,7 +1,7 @@
 {
   "name": "arr-flatten",
   "description": "Recursively flatten an array or arrays.",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "homepage": "https://github.com/jonschlinkert/arr-flatten",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "contributors": [
