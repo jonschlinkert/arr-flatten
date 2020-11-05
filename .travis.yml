@@ -8,7 +8,6 @@ arch:
   - ppc64le
 node_js:
   - node
-  - iojs
   - '8'
   - '7'
   - '6'
