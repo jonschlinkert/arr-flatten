@@ -8,15 +8,11 @@
 'use strict';
 
 module.exports = function (arr) {
-  return flat(arr, []);
+  return ...flat(arr);
 };
 
-function flat(arr, res) {
-  var i = 0, cur;
-  var len = arr.length;
-  for (; i < len; i++) {
-    cur = arr[i];
-    Array.isArray(cur) ? flat(cur, res) : res.push(cur);
-  }
-  return res;
+function* flat(h, ...r) {
+  if (Array.isArray(h)) yield* flat(...h);
+  else h == null ? [] : yield h;
+  if (r.length) yield* flat(r);
 }
